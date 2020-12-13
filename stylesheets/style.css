@@ -247,13 +247,10 @@ nav {
 .prjcts-icon {
   display: grid;
   width: 25px;
-  margin-bottom: 10px;
+  margin: 5px 0px;
   fill: var(--blue);
 }
 .prjcts-icon:hover {
-  display: grid;
-  width: 25px;
-  margin-bottom: 10px;
   fill: var(--color-light-grey);
 }
 .one-column {
@@ -361,7 +358,7 @@ nav {
 .design-img-thumb:hover {
   display: grid;
   align-content: flex-start;
-  transform: scale(1.1);
+  transform: scale(1.2);
 }
 /* MEDIA QUARIES */
 @media only screen and (max-width: 1400px) {

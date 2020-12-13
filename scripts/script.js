@@ -7,7 +7,7 @@ $('#hero-arrow-btn-mobile, #hero-arrow-btn, #projects-link, #cta-my-work').click
 		800
 	);
 });
-$('#home-link').click(function() {
+$('#home-link, #home').click(function() {
     console.log("clicked");
 	$([ document.documentElement, document.body ]).animate(
 		{
@@ -25,3 +25,7 @@ $('#designs-link').click(function() {
 		800
 	);
 });
+
+$('#live-demo-no').click(function() {
+	alert("This website is currently unavilable. Please checkback later. Sorry.");
+})
