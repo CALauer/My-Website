@@ -1,4 +1,4 @@
-$('#hero-arrow-btn-mobile, #hero-arrow-btn, #projects-link, #cta-my-work').click(function() {
+$('#hero-arrow-btn-mobile, #hero-arrow-btn, #projects-link, #cta-my-work, #mobile-link-projects').click(function() {
     console.log("clicked");
 	$([ document.documentElement, document.body ]).animate(
 		{
@@ -7,7 +7,7 @@ $('#hero-arrow-btn-mobile, #hero-arrow-btn, #projects-link, #cta-my-work').click
 		800
 	);
 });
-$('#home-link, #home').click(function() {
+$('#home-link, #home, #mobile-link-top').click(function() {
     console.log("clicked");
 	$([ document.documentElement, document.body ]).animate(
 		{
@@ -16,7 +16,7 @@ $('#home-link, #home').click(function() {
 		800
 	);
 });
-$('#designs-link').click(function() {
+$('#designs-link, #mobile-link-designs').click(function() {
     console.log("clicked");
 	$([ document.documentElement, document.body ]).animate(
 		{
@@ -26,6 +26,18 @@ $('#designs-link').click(function() {
 	);
 });
 
-$('#live-demo-no').click(function() {
-	alert("This website is currently unavilable. Please checkback later. Sorry.");
-})
+// $('#live-demo-no').click(function() {
+// 	alert("This website is currently unavilable. I will be uploading this to the server ina few days. Please checkback later. Sorry.");
+// })
+
+$('#mobile-menu-btn, .mobile-menu-display').click('click', function() {
+	let x = $('.mobile-menu-display');
+	if (x.css('top') !== '50px') {
+		x.animate({top: 50 });
+		}
+		else {
+			x.animate({top: '-100%', height: 'auto'});
+	} 
+	});
+
+
