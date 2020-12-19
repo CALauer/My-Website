@@ -1,6 +1,5 @@
 
 $("a").click(function() {
-	console.log(this.id);
 	let id = this.id;
 	let dropDownMenu = $('.dropdown-menu');
 
@@ -41,7 +40,7 @@ $("a").click(function() {
 									checkMobileMenu();
 								}
 					else {
-						console.log("false");
+						
 
 					}
 				});
