@@ -35,6 +35,9 @@ a {
 a:hover {
   color: var(--blue);
 }
+p {
+  margin-top: 10px;
+}
 .icon {
   display: inline;
   width: 25px;
@@ -78,7 +81,7 @@ nav {
   width: 100%;
   background: var(--background-one);
   opacity: 0.98;
-  box-shadow: 0px 4px 10px black;
+  box-shadow: 0px 4px 4px black;
   top: 0px;
   z-index: 2;
 }
@@ -301,13 +304,53 @@ nav {
   margin-top: 20px;
   margin-bottom: 10px;
 }
-.prjcts-h3, .designs-h3 {
+.prjcts-h3 {
     margin-top: -5px;
     text-align: left;
     color: var(--color-white);
     letter-spacing: 3px;
     font-weight: 400;
     margin-bottom: 10px;
+  }
+  .designs-h3 {
+    margin-top: 20px;
+    text-align: left;
+    color: var(--color-white);
+    letter-spacing: 3px;
+    font-weight: 400;
+    margin-bottom: 10px;
+  }
+  .abt-h1 {
+    text-align: left;
+    color: var(--blue);
+    letter-spacing: 2px;
+    font-weight: 600;
+    margin: 10px 0px;
+    font-size: 1.5em;
+  }
+  .abt-h2 {
+    text-align: left;
+    color: var(--blue);
+    letter-spacing: 2px;
+    font-weight: 400;
+    margin: 10px 0px;
+    font-size: 1.3em;
+  }
+  .abt-h3, .abt-h4 {
+    text-align: left;
+    color: var(--color-white);
+    letter-spacing: 3px;
+    font-weight: 400;
+    margin: 10px 0px;
+    font-size: 1.1em;
+
+  }
+  .abt-h4-2 {
+    text-align: left;
+    color: var(--blue);
+    letter-spacing: 3px;
+    font-weight: 400;
+    margin: 10px 0px;
   }
 .prjcts-h2, .designs-h2 {
     text-align: left;
@@ -381,6 +424,7 @@ nav {
   transform: scale(1.2);
 }
 footer {
+  padding-top: 50px;
   background: var(--background-four);
   color: var(--color-light-grey)
 }
@@ -392,6 +436,55 @@ footer {
   grid-template-areas: 'col1 col2';
   width: 95%;
   
+}
+/* About Me */
+.aboutme {
+  display: grid;
+  align-content: flex-start;
+  align-items: flex-start;
+  padding-bottom: 100px;
+  background: var(--background-four);
+  color: var(--color-light-grey);
+}
+.about-wrapper {
+  display: grid;
+  margin: auto;
+  grid-template-columns: var(--one-one-columns);
+  width: 95%;
+}
+.about-wrapper div {
+  width: 90%;
+}
+.about-wrapper div:nth-child(even) {
+  justify-self: left;
+  width: 90%;
+}
+.skills {
+  list-style-type: none;
+  padding: 0px 10px;
+  font-size: .9em;
+}
+.dropdown-menu {
+  display: none;
+  align-content: flex-start;
+  position: absolute;
+  margin-left: 65px;
+  padding-top: 25px;
+  height: 90px;
+  width: 175px;
+  background-image: url("../images/1x/dropdownbg.png");
+  background-repeat: no-repeat;
+  background-color: rgb(4, 4, 4);
+  box-shadow: 0px 2px 2px 0px black;
+}
+.dropdown-li {
+  list-style-type: none;
+  padding-left: 20px;
+  padding-bottom: 10px;
+  margin: 0px;
+}
+.dropdown-links {
+  list-style-type: none;
 }
 /* MEDIA QUARIES */
 @media only screen and (max-width: 1400px) {
