@@ -696,8 +696,8 @@ footer {
   position: absolute;
   margin-left: 65px;
   padding-top: 25px;
-  height: 90px;
   width: 175px;
+  height: auto;
   background-image: url("../images/1x/dropdownbg.png");
   background-repeat: no-repeat;
   background-color: #040404;

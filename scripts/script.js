@@ -16,8 +16,18 @@ $("a").click(function() {
         dropDownMenu.fadeToggle(200).delay(100).css({ display: 'grid' });
         scrollTo(section);
     }
+    if (id == ('dropdown-project2')) {
+        section = "project2";
+        dropDownMenu.fadeToggle(200).delay(100).css({ display: 'grid' });
+        scrollTo(section);
+    }
     if (id == ('dropdown-project3')) {
         section = "project3";
+        dropDownMenu.fadeToggle(200).delay(100).css({ display: 'grid' });
+        scrollTo(section);
+    }
+    if (id == ('dropdown-project4')) {
+        section = "project4";
         dropDownMenu.fadeToggle(200).delay(100).css({ display: 'grid' });
         scrollTo(section);
     }
